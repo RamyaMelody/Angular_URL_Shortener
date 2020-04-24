@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UrlHomeComponent } from './url-home/url-home.component';
 import { UrlviewdbComponent } from './urlviewdb/urlviewdb.component';
-import { RedirectComponent } from './redirect/redirect.component';
+
 
 
 
@@ -16,8 +16,7 @@ import { RedirectComponent } from './redirect/redirect.component';
   declarations: [
     AppComponent,
     UrlHomeComponent,
-    UrlviewdbComponent,
-    RedirectComponent
+    UrlviewdbComponent
   ],
   imports: [
     BrowserModule,
