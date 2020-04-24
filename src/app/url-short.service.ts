@@ -10,10 +10,10 @@ export class UrlShortService {
   constructor(private http: HttpClient) { }
 
   postUrl(data): Observable<any> {
-    return this.http.post(`http://localhost:3000/create`, data)
+    return this.http.post(`https://node-url-app.herokuapp.com/create`, data)
   }
   getURL(): Observable<any> {
-    return this.http.get(`http://localhost:3000/view`)
+    return this.http.get(`https://node-url-app.herokuapp.com/view`)
 
   }
 
