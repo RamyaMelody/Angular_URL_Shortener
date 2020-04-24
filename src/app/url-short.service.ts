@@ -16,7 +16,6 @@ export class UrlShortService {
     return this.http.get(`https://node-url-app.herokuapp.com/view`)
 
   }
-  
 
 
 
