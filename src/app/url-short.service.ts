@@ -16,6 +16,9 @@ export class UrlShortService {
     return this.http.get(`https://node-url-app.herokuapp.com/view`)
 
   }
+  getlongURL(data): Observable<any> {
+    return this.http.get(`https://node-url-app.herokuapp.com/geturl/` + data)
+  }
 
 
 
