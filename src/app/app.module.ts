@@ -23,7 +23,7 @@ import { UrlviewdbComponent } from './urlviewdb/urlviewdb.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
     
   ],
   providers: [],
