@@ -1,7 +1,7 @@
 <div class="row" >
     <div class="col-lg-3" *ngFor="let links of urlListDB">
         <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Find your Short URL</div>
+            <div class="card-header">Total Click:&nbsp;{{links.clickCount}}</div>
             <div class="card-body">
                 <h6 class="card-title">
                     Short URL:&nbsp;<a href="https://node-url-app.herokuapp.com/geturl/{{links.shortURL}}" >https://node-url-app.herokuapp.com/geturl/{{links.shortURL}}</a>
