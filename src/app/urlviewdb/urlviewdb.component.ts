@@ -21,6 +21,16 @@ export class UrlviewdbComponent implements OnInit {
   ngOnInit(): void { }
 
 
+urlCopy(url){
+    let short_url = 'http://localhost:3000/geturl/'+url
+    const copy = document.createElement('input');    
+    copy.value = short_url;
+    document.body.appendChild(copy);
+    copy.focus();
+    copy.select();
+    document.execCommand('copy');
+    document.body.removeChild(copy);
+  }
 
 
 
