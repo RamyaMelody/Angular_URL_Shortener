@@ -30,6 +30,7 @@ urlCopy(url){
     copy.select();
     document.execCommand('copy');
     document.body.removeChild(copy);
+    alert("URL copied successfully")
   }
 
 
