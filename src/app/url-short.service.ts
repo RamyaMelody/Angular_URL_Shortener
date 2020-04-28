@@ -10,14 +10,14 @@ export class UrlShortService {
   constructor(private http: HttpClient) { }
 
   postUrl(data): Observable<any> {
-    return this.http.post(`https://node-url-app.herokuapp.com/create`, data)
+    return this.http.post(`https://node-url-shortener-app.herokuapp.com/create`, data)
   }
   getURL(): Observable<any> {
-    return this.http.get(`https://node-url-app.herokuapp.com/view`)
+    return this.http.get(`https://node-url-shortener-app.herokuapp.com/view`)
 
   }
   deleteURL(shorturl):Observable<any> {
-    return this.http.delete(`https://node-url-app.herokuapp.com/delete/`+shorturl)
+    return this.http.delete(`https://node-url-shortener-app.herokuapp.com/delete/`+shorturl)
   }
 
 
