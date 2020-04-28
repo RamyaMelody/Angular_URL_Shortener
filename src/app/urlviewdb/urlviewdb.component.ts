@@ -22,7 +22,7 @@ export class UrlviewdbComponent implements OnInit {
 
 
 urlCopy(url){
-    let short_url = 'http://localhost:3000/geturl/'+url
+    let short_url = 'https://node-url-shortener-app.herokuapp.com/geturl/'+url
     const copy = document.createElement('input');    
     copy.value = short_url;
     document.body.appendChild(copy);
