@@ -32,6 +32,16 @@ urlCopy(url){
     document.body.removeChild(copy);
     alert("URL copied successfully")
   }
+ delurl(url){
+    this.urlshortservice.deleteURL(url).subscribe((data) => {
+      let status = data.message;
+      if(status == "Deleted Successfully"){
+        alert("Deleted Successfully");
+        this.router.navigate(['']);
+      }
+      
+    })
+  }
 
 
 
