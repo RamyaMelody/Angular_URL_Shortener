@@ -5,7 +5,12 @@
             <div class="card-body">
                 <h6 class="card-title">
                     Short URL:&nbsp;<a href="https://node-url-app.herokuapp.com/geturl/{{links.shortURL}}" >https://node-url-app.herokuapp.com/geturl/{{links.shortURL}}</a>
-                </h6>
+                 <span class="float-right">
+                            <a href="" (click)="urlCopy(links.shortURL)">                        
+                                <i class="fa fa-copy"></i>
+                            </a>
+                        </span>
+              </h6>
                 <p class="card-text">Long URL: {{links.longURL}}</p>
             </div>
         </div>
