@@ -16,6 +16,10 @@ export class UrlShortService {
     return this.http.get(`https://node-url-app.herokuapp.com/view`)
 
   }
+  deleteURL(shorturl):Observable<any> {
+    return this.http.delete(`https://node-url-app.herokuapp.com/delete/`+shorturl)
+  }
+
 
 
 
